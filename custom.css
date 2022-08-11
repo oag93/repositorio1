@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.grid > header{
+    height: 50px;
+    justify-content: space-between;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-family:'Bebas Neue', cursive;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+.logo{
+    display: flex;
+    float: left;
+    padding: 10px;
+    align-items: center;
+    
+}
+.logo img{
+    height: 50px;
+    justify-self: start;
+}
+.logoinf img{
+    height: 50px;
+    justify-self: start;
+}
+.profile{
+   margin-right: 0.5em;
+   width: 26px;
+}
+.search{
+    width: 26px;
+}
+
+.shoppingb{
+    width: 26px;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 50px;
+
+}
+nav a:hover{
+    color:#e7dc38 ;
+}
+.nikej1{
+    background-image:url(./img/airforce1.jpg);
+    background-size: cover;
+    position: relative;
+    grid-column: 1/6;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+/*.nikej1:hover{
+    background-image:url(./img/airforce1.jpg);
+    background-size: cover;
+    position: relative;
+    width: 110%;
+}*/
+
+.fondo{
+    color: fff;
+    height: 700px;
+    line-height:20px;
+    text-align: center;
+    vertical-align:middle;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+.comp1 {
+    position: absolute;
+    top:50%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.comp1 h1{
+    font-size: 50PX;
+    color: rgb(43, 134, 134);
+    font-family:'Bebas Neue', cursive;
+}
+.comp1 p{
+margin-top: 10px;
+font-size:20px;
+font-family: 'Bebas Neue', cursive;
+}
+.nikefc{
+    background-image:url(./img/NikeFC.jpg);
+    background-size: cover;
+    position: relative;
+    grid-column: 1/6;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.fondo2{
+    color: fff;
+    height: 700px;
+    line-height:20px;
+    text-align: center;
+    vertical-align:middle;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px;
+}
+.comp2 {
+    position: absolute;
+    top:20%;
+    margin-right: 30px;    
+}
+.comp2 h1{
+    font-size: 40PX;
+    color: rgb(223, 47, 47);
+    font-family:'Bebas Neue', cursive;
+}
+.comp2 p{
+margin-top: 10px;
+font-size:15px;
+font-family: 'Bebas Neue', cursive;
+}
+.yeezy{
+    background-image:url(./img/yeezy_boost.jpg);
+    background-size: cover;
+    position: relative;
+    grid-column: 1/6;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.fondo3{
+    color: fff;
+    height: 700px;
+    line-height:20px;
+    text-align: center;
+    vertical-align:middle;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+.comp3 {
+    position: absolute;
+    top:50%;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.comp3 h1{
+    font-size: 50PX;
+    color: rgb(100, 81, 28);
+    font-family:'Bebas Neue', cursive;
+}
+.comp3 p{
+margin-top: 10px;
+font-size:20px;
+font-family: 'Bebas Neue', cursive;
+}
+footer{
+    grid-column: 1/6;
+    height: 150px;
+    justify-items:center;
+    background-color: black;
+    display:grid;
+    align-items: center;
+    padding: 15px;
+    color: azure;
+    position: relative;
+    grid-template-columns: [x0]2fr [x1]2fr [x2]1fr [x3]0.5fr [x4]0.5fr;
+    grid-template-rows:1fr;
+    
+    
+}
+.whatsapp{
+    height: 30px;
+    justify-self: center;
+    grid-column: x3 / x4;
+    /*transform: translate(1650%,10%);*/
+}
+.messenger1{
+    height: 30px;
+    justify-self: center;
+    /*transform: translate(-100%,-100%);*/
+    grid-column: x4 / x5;
+}
+.registro{
+    padding-left: 25px;
+    padding-right: 10px;
+    justify-self: center;
+    grid-column: x2 / x3;
+    /*transform:translate(500px,0);*/
+}
+p.textosus{
+    text-align: justify;
+}
+/* Estilos de Formulario de Contacto*/
+.formCont{
+    
+    align-items: center;
+}
+
+  form {
+    position : relative;
+    width  : 100%;
+    height : 500px;
+    margin : 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+} 
+
+.formCont input,.formCont textarea {
+    width : 500px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .linksP a{
+    color: #336EFF;
+    justify-content: space-between;
+    padding: 1em;
+    text-align: center;
+    margin-left: 25px;
+  }
+  /* Estilos de Formulario Compra*/
+.formComp{
+    
+    display: inline-flex;
+}
+.formDatos{
+    padding-left: 30px;
+}
+.formProd {
+    padding-left: 10px;
+    width: 500px;
+}
+.formProd img{
+    width: 100px;
+}
+ .formProd .izquierdaForm{
+        font-weight: bold;
+        text-align: start;
+ }
+ .formProd .derechaForm{
+    font-weight:lighter;
+    text-align: end;
+}
+   /* Estilos de Productos*/
+   .productos{
+    background-image:url(./img/nikebanner.jpg);
+    background-size: cover;
+    position: relative;
+}
+.fondoP{
+    color: fff;
+    height: 400px;
+    line-height:20px;
+    text-align: center;
+    vertical-align:middle;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+.grillaP{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+    grid-auto-rows: 300px;
+    
+}
+.grillaP a img{
+    border: 5px solid rgb(233, 230, 230);
+    width: 250px;
+    height: 175px;
+    padding: 10px;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+.grillaP a img:hover{
+    height: 185px;
+    width: 260px;
+    border-color: rgb(122, 125, 158);
+    opacity: 70%;
+}
+.grillaP a p{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Bebas Neue', cursive;
+    text-align: center;
+}
+.grillaP a p:hover{
+    color: rgb(28, 46, 146);
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Bebas Neue', cursive;
+    text-align: center;
+}
+/* Estilos de Perfil*/
+.temaPerfil{
+    background-image: url(./img/bannertenisperfil.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+.fondoPer{
+    color: fff;
+    height: 450px;
+    width: 100%;
+    line-height:20px;
+    text-align: center;
+    vertical-align:middle;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    grid-column: 1/6;
+    grid-row: 2/2;
+}
+
+.temaPerfil img{
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    transform:translate(-110px,150px);
+    
+}
+
+.temaPerfil p,.temaPerfil button{
+    font-weight: bold;
+    transform:translate(-10px,350px);
+
+}
+button{
+    border-radius: 10%;
+    width: 100px;
+    height:30px ;
+    background-color: #949494;
+    color: aliceblue;
+    font-style: bold;
+    font-family:'Bebas Neue', cursive;
+}
+button:hover{
+    border-radius: 10%;
+    width: 100px;
+    height:30px ;
+    background-color: #2a4088;
+    color: aliceblue;
+    font-style: bold;
+    font-family:'Bebas Neue', cursive;
+}
+
+/*movil inicio*/
+@media screen and (max-width:420px){
+   body{
+    display: block;
+    overflow-x: hidden;
+    width: 390px;
+   }
+    .grid{
+    grid-template-columns: [x0]195px [x1]195px;
+    grid-template-rows: [y0]80px [y1]300px [y2]300px [y3]300px;
+    grid-gap: 0px;
+    padding: 0;
+    display: grid;
+    width: 390px;
+   }
+   .grid header{
+    display:grid;
+    width: 100%;
+    height: 80px;
+    padding: 0%;
+    margin: 0;
+    grid-template-columns:[x0]50px [x1]50px [x2]50px [x3]50px [x4]50px [x5]50px;
+    
+}
+  nav{
+    display: grid;
+    grid-template-columns: [x0]50px [x1]50px [x2]50px [x3]50px [x4]50px [x5]50px;
+    grid-template-rows:40px;
+    grid-column:x1 / x6;
+}
+a.logo{
+    grid-column:x0 / x2; 
+    align-items: center;
+}
+a.inicioL{
+    font-size: 10px;
+    display: none;
+}
+a.productosL{
+    grid-column:x2 / x3;
+    font-size: 10px;
+    margin-top: 15%;
+    
+}
+a.contactoL{
+    grid-column:x3 / x4;
+    font-size: 10px;
+    margin-top: 15%;
+}
+a.perfilL{
+    grid-column:x4 / x5;
+    margin-top: 15%;
+}
+a.buscarL{
+    grid-column:x5 / x6;
+    margin-top: 15%;
+}
+a.carritoL{
+    grid-column:x6 / x7;
+    margin-top: 20%;
+}
+.profile{
+    width: 15px;
+    align-items: center;
+ }
+ .search{
+     width: 15px;
+     align-items: center;
+ }
+ 
+ .shoppingb{
+     width: 15px;
+ 
+ }
+ nav a{
+     font-weight: 15px;
+     padding-right: 0px;
+     align-items: center;
+ 
+ }
+ nav a:hover{
+     color:#e7dc38 ;
+ }
+   img.logo{
+    float: left;
+    padding: 10px;
+    align-items: center;
+    grid-column:x0 / x1;
+    height: 15px;
+}
+
+.logoinf img{
+    height: 30px;
+    justify-self: start;
+}
+
+   .nikej1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: x0 / x2;
+}
+    .nikefc{
+    grid-column: x0 / x2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .yeezy{
+    grid-column: x0 / x2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .fondo{
+        height: 300px;
+        grid-column: x0 / x2;
+    }  
+    .comp1 {
+        position: absolute;
+        top:20%;        
+    }
+    .fondo2{
+        height: 300px;
+        grid-column: x0 / x2;
+    }  
+    .comp2 {
+        position: absolute;
+        top: 50%;
+        grid-column: 2/2;
+        justify-content: center;
+    }
+    .fondo3{
+        height: 300px;
+        grid-column: x0 / x2;
+    }  
+    .comp3 {
+        position:absolute;
+        top:0%;
+    }
+    footer{
+        grid-column: x0 / x2;
+        grid-row-start: y4;
+        grid-row-end: y6;
+        height: 100px;
+        justify-items:center;
+        background-color: black;
+        display: grid;
+        align-items: center;
+        padding: 15px;
+        color: azure;
+        position: relative;
+        grid-template-columns: 200px 50px 50px 50px 50px;
+        grid-template-rows:100px ;
+        
+    }
+    .whatsapp{
+        height: 30px;
+        justify-self: center;
+    }
+    .messenger1{
+        height: 30px;
+        justify-self: center;
+        
+    }
+    .registro{
+        display: none;
+       
+    }
+    p.textosus{
+        text-align: justify;
+    }
+    .logo img{
+        height: 50px;
+        justify-self: center;
+    }
+    .container1 .formCont{
+        width: 390px;
+        grid-column: x0 / x2;
+        grid-row-start: y1;
+        grid-row-end: y4;
+    }
+    .formCont input,.formCont textarea {
+        width : 390px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .fondoPer{
+        grid-column: 1/4;
+        width : 390px;
+    }
+    .formComp{
+        display: grid;
+        grid-template-columns:[x0]1fr [x1]1fr;
+        grid-template-rows:[y0]400px [y1]400px;
+        grid-column: 1/4;
+    }
+    .formDatos{
+        grid-row-start: y1;
+        grid-row-end: y2;
+    }
+    .formProd {
+        grid-row-start: y0;
+        grid-row-end: y1;
+        padding-left: 10px;
+        width: 380px;
+        height: 300px;
+    }
+    .productos{
+        display: none;
+    }
+    .grillaP{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap: 10px;
+        grid-auto-rows: 350px;
+        grid-column: 1/4;
+        padding-left: 25%;
+        padding-top: 20%;
+    }
+    footer.prodFooter{
+        display: none;
+        
+}
