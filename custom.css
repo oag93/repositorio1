@@ -60,7 +60,7 @@ nav a{
 
 }
 nav a:hover{
-    color:#e7dc38 ;
+    color:hsl(56, 78%, 56%) ;
 }
 .nikej1{
     background-image:url(./img/airforce1.jpg);
@@ -291,7 +291,7 @@ p.textosus{
 .grillaP a img:hover{
     height: 185px;
     width: 260px;
-    border-color: rgb(122, 125, 158);
+    border-color: #7a7d9e;
     opacity: 70%;
 }
 .grillaP a p{
@@ -302,7 +302,7 @@ p.textosus{
     text-align: center;
 }
 .grillaP a p:hover{
-    color: rgb(28, 46, 146);
+    color: rgb(37, 56, 168);
     font-size: 25px;
     font-weight: bold;
     font-family:'Bebas Neue', cursive;
@@ -353,7 +353,7 @@ button:hover{
     border-radius: 10%;
     width: 100px;
     height:30px ;
-    background-color: #2a4088;
+    background-color: #2d4699;
     color: aliceblue;
     font-style: bold;
     font-family:'Bebas Neue', cursive;
@@ -440,7 +440,7 @@ a.carritoL{
  
  }
  nav a:hover{
-     color:#e7dc38 ;
+     color:hsl(56, 78%, 56%) ;
  }
    img.logo{
     float: left;
